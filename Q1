@@ -1,0 +1,45 @@
+import math
+pi = 22/7
+unit = "mm"
+α = float(input("α = "))
+m = float(input("m = "))
+i = int(input("i = "))
+d1 = float(input("d1 = "))
+d2 = i*d1
+z1 = d1/m
+z2 = d2/m
+print("d=",d2,unit)
+print("Z1=",z1)
+print("Z2=",z2)
+ha = m
+hf = 1.25*m
+h = 2.25*m
+c = 0.25*m
+da1 = (z1 + 2)*m
+da2 = (z2 + 2)*m
+s = (pi/2)*m
+hw = 2*m
+p = pi*m
+a = m*((z1+z2)/2)
+df1 = d1- (2*hf)
+df2 = d2- (2*hf)
+α1 = math.radians(α)
+db1 = d1*math.cos(α1)
+db2 = d2*math.cos(α1)
+print("addendum = ",ha,unit)
+print("dedendum = ",hf,unit)
+print("whole depth = ",h,unit)
+print("clearance = ",ha,unit)
+print("Outside diameter of pinion = ",da1,unit)
+print("Outside diameter of gear = ",da2,unit)
+print("tooth Thickness = ","%.2f"%s,unit)
+print("Working depth = ",hw,unit)
+print("circular pitch = ","%.2f"%p,unit)
+print("centre distance = ",a,unit)
+print("base circle diameter of pinion = ","%.2f"%db1,unit)
+print("base circle diameter of pinion = ","%.2f"%db2,unit)
+print("root diameter of pinion = ",df1,unit)
+print("root diameter of gear = ",df2,unit)
+
+
+
