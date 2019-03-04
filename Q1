@@ -8,9 +8,9 @@ d1 = float(input("d1 = "))
 d2 = i*d1
 z1 = d1/m
 z2 = d2/m
-print("d=",d2,unit)
-print("Z1=",z1)
-print("Z2=",z2)
+print("Pitch circle diameter of gear =",d2,unit)
+print("Number of teeth on pinion =","%.d"%z1)
+print("Number of teeth on gear =","%.d"%z2)
 ha = m
 hf = 1.25*m
 h = 2.25*m
@@ -40,6 +40,5 @@ print("base circle diameter of pinion = ","%.2f"%db1,unit)
 print("base circle diameter of pinion = ","%.2f"%db2,unit)
 print("root diameter of pinion = ",df1,unit)
 print("root diameter of gear = ",df2,unit)
-
 
 
