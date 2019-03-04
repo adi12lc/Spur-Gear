@@ -1,0 +1,22 @@
+import math
+d1 = float(input("d1 = "))
+Mt1 = float(input("Mt1 = "))
+d2 = float(input("d2 = "))
+α = float(input("α = "))
+unit_1 = 'N'
+unit_2 = 'Nmm'
+Cs = 1 #sevice factor
+r1 = d1/2
+r2 = d2/2
+ft = (Mt1*Cs)/r1
+α1 = math.radians(α)
+fn = ft/math.cos(α1)
+fr = fn*math.sin(α1)
+Mt2 = ft*r2
+print("tangential force = ","%.2f"%ft,unit_1)
+print("Normal tooth load = ","%.2f"%fn,unit_1)
+print("radial load = ","%.2f"%fr,unit_1)
+print("torque on gear = ",Mt2,unit_2)
+
+
+
